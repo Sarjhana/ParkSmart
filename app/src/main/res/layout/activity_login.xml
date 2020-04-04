@@ -1,0 +1,73 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".MainActivity"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="LOGIN"
+        android:textColor="#ff6326"
+        android:textSize="55dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_marginTop="80dp"
+        android:focusable="true"
+        android:hint="Enter Name"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#737271"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:textColorHint="#737271" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttoncustom"
+        android:text="Submit"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="#470700"
+        android:textColorHighlight="#470700"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_below="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/buttoncustom"
+        android:text="Cancel"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="#470700"
+        android:textColorHighlight="#470700"
+        android:textAllCaps="true"/>
+
+</RelativeLayout>
